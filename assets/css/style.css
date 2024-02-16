@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.text_color{
+    color: white;
+}
+.home-container{
+    position: relative;
+    height: 100vh;
+}
+
+
+.home-heading {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 30%;
+}
+
+
+
+.products{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr); /* Create three equal columns */
+    grid-gap: 10px;
+}
+
+.cards img{
+    width: 180px;
+}
+
+.boxes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 50vh;
+  }
+.box1{
+    padding: 0 20px;
+    width: 270px;
+}
+.box3{
+    padding: 0 20px;
+    width: 270px;
+}
+.box2{
+    align-self:center;
+    padding: 0 20px;
+    width: 270px;
+}
+.box4{
+    align-self: center;
+    padding: 0 20px;
+    width: 270px;
+}
+
+/* ------------industries------------ */
+.industries-container{
+    position: relative;
+    height: 100vh;
+}
+
+
+.industries-heading {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.industries-img{
+    width: 280px;
+}
+
+/* ----------Footer----------- */
+.c-section{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: center;
+}
+.c-section p{
+    columns: #3F6050;
+    font-weight: 600;
+
+}
+.c-section a{
+    text-decoration: none;
+    color: black;
+}
+.sp{
+    height: 50vh;
+}
+
+
+
+@media screen and (max-width:1025px) {
+    .products{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr); /* Create three equal columns */
+        grid-gap: 20px;
+    }
+    .cards img{
+        width: 170px;
+    }
+
+    /* ----------------industries -----------*/
+    .industries-img{
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:769px) {
+    .products{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr); /* Create three equal columns */
+        grid-gap: 20px;
+    }
+    .cards img{
+        width: 160px;
+    }
+
+    /* ----------------industries -----------*/
+    .industries-img{
+        width: 180px;
+    }
+    .sp{
+        height: 30vh;
+    }
+}
+
+/*-------- contact page------------ */
+.form-row {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-submit {
+    background-color: #ffff;
+    color: #3F6050;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+::placeholder {
+    color: #ffffff; /* Set the desired color for placeholder text */
+}
+
+
+
+.faq-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Add bottom border to the question */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-question span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border-bottom:none;
+    text-align: left;
+}
+
+
+
+
+@media screen and (max-width:426px) {
+    .products{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr); /* Create three equal columns */
+        grid-gap: 20px;
+    }
+    .cards img{
+        width: 10px;
+    }
+
+
+    /* ----------------industries -----------*/
+    .industries-img{
+        width: 130px;
+    }
+}
