@@ -84,8 +84,6 @@ body{
 .c-section{
     display: flex;
     flex-direction: column;
-    align-items:left;
-    justify-content: center;
 }
 .c-section p{
     columns: #3F6050;
